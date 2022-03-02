@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding-top: 20px;
+}
+
+main {
+    background-color: #EEEEEE;
+    display: block;
+    height: 780px;
+    width: 600px;
+    min-height: 780px;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+div.row {
+    border: 1px solid #9E9E9E;
+    display: flex;
+    height: 200px;
+    margin-top: 40px;
+    background-color: white;
+    
+}
+
+div.row > .column1 {
+    flex: 1.2;
+    padding: 20px;
+}
+
+div.row > .column1 > img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.row > .column2 {
+    flex: 1.8;
+}
+
+div.row > .column2 > .paragraph {
+    height: 127px;
+    padding-right: 20px;
+}
+
+div.row > .column2 > .paragraph > p {
+    display:block;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.button-group {
+    margin: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+
+button.listen-button {
+    background-image: url(../images/listen.png);
+    height: 30px;
+    width: 85px;
+    color: white;
+}
+
+button.add-button {
+    background-image: url(../images/add.png);
+    height: 30px;
+    width: 78px;
+    color: white;
+}

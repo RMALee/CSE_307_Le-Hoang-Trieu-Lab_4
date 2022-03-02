@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --this-yellow: #F29F26;
+    --this-cyan: #284A70;
+}
+
+header {
+    border-bottom: 4px solid var(--this-yellow);
+    background-color: var(--this-cyan);
+}
+
+header > nav {
+    width: 75%;
+    max-width: 1366px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > nav > ul {
+    text-align: center;
+    list-style: none;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    position: relative;
+    margin-left: -4px;
+    border-left: 1px solid white;
+}
+
+header > nav > ul > li:last-of-type {
+    border-right: 1px solid white;
+}
+
+header > nav > ul > li:hover {
+    background-color: var(--this-yellow);
+}
+
+header > nav > ul > li > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0px;
+    top: 38.4px;
+    min-width: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--this-cyan);
+}
+
+.submenu > li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+
+.submenu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+}
+
+nav > ul > li:hover > .submenu {
+    display: block;
+}
+
+nav > ul > li:hover > .submenu > li > a {
+    text-align: left;
+}
+
+nav > ul > li:hover > .submenu > li:hover > a {
+    /* background-color: var(--this-yellow); */
+    color: var(--this-yellow);
+}
+
+.has-children:after {
+    font-family: FontAwesome;
+    content: "\f107";
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --css-block-heading-color: #961A18;
+    --mid-col-heading-color: #808080;
+    --right-col-btn-background-color: #BCE4FA;
+    --right-col-btn-color: #39CBFD;
+    --this-link-color: #C07574;
+}
+
+.container {
+    background-color: #F1F1F1;
+    height: 600px;
+    width: 1000px;
+    min-width: 1000px;
+    min-height: 600px;
+    border: 1px solid;
+    margin-top:20px;
+}
+
+.container > .row > div:nth-of-type(2) {
+    background-color: #fff;
+}
+
+.row > div:first-of-type >h4:before {
+    font-family: FontAwesome;
+    content: "\f015";
+}
+
+#previous, #next {
+    width:150px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+#previous:before {
+    font-family: FontAwesome;
+    content: "\f0d9";
+    float: left;
+}
+
+#next:after {
+    font-family: FontAwesome;
+    content: "\f0da";
+    float: right;
+}
+
+.row > div.col-2 {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.col-2 > h4 {
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+
+.css-block > ul {
+    padding-top: 10px;
+}
+
+.css-block > ul > li {
+    list-style: none;   
+}
+
+.css-block > ul > li > a {
+    color: black;
+}
+
+.css-block > ul > li:first-child > a {
+    color: var(--css-block-heading-color);
+    font-weight: bold;
+}
+
+.col-8 {
+    border: 1px solid var(--mid-col-heading-color);
+    margin-top: 1px;
+}
+
+.mid-first-block > h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--mid-col-heading-color);
+    margin-bottom: 10px;
+}
+
+div.col-8 {
+    padding: 8px;
+}
+
+.mid-second-block > h2 {
+    font-size: 16px;
+    background-color: var(--mid-col-heading-color);
+    color: white;
+    padding-left: 5px;
+}
+
+.mid-second-block > img {
+    float: left;
+    height: 120px;
+    margin-right: 15px;
+}
+
+.detail > p {
+    font-weight: bold;
+}
+
+.detail > a, .col-2:last-of-type a {
+    text-decoration: underline;
+    color: var(--this-link-color);
+}
+
+.col-2 {
+    padding-right: 0px;
+}
+
+.col-2:last-of-type > div{
+    margin: 1px;
+    background-color: white;
+    border: 1px solid var(--mid-col-heading-color);
+    text-align: center;
+}
+
+.col-2:last-of-type > div > h2 {
+    font-size: 16px;
+    background-color: var(--mid-col-heading-color);
+    color: white;
+}
+
+.col-2:last-of-type > div > button {
+    width: 100px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: var(--right-col-btn-background-color);
+    color: var(--right-col-btn-color);
+}
+
+.small-input {
+    text-align: center;
+}
+
+.small-input > input[type="text"] {
+    width: 120px;
+}
+
+.small-input > button {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+}    

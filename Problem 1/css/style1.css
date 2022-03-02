@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Edwardian Script;
+    src: url('fonts/EdwardianScriptITC.ttf');
+}
+
+section > p:first-of-type::first-letter {
+    font-family: Edwardian Script;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section > p:last-of-type, section > p:first-of-type {
+    font-family: 'Consolas';
+    color: #0094ff;
+}
